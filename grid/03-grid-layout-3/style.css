@@ -70,7 +70,14 @@
   background-color: #C50208;
 }
 
+.nav ul{
+  display: grid;
+  grid: 1fr / repeat(3, 1fr);
+  align-items: center;
+}
+
 .nav ul li {
+  display: grid;
   font-size: 16px;
   text-transform: uppercase;
 }
