@@ -1,3 +1,7 @@
+:root{
+  --col: calc(100vw / 5);
+}
+
 body,
 html {
   height: 100%;
@@ -5,8 +9,12 @@ html {
 }
 
 .container {
+  display: grid;
+  grid: 1fr 1fr 5fr 1fr / var(--col) 5fr;
+  gap: 15px;
+
   text-align: center;
-  height: 100%;
+  height: 100vh;
   padding: 16px;
   box-sizing: border-box;
 }
@@ -21,10 +29,16 @@ html {
 }
 
 .header {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
   background-color: #006157;
 }
 
 .sidebar {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: -2;
   background-color: #005B94;
 }
 
@@ -37,6 +51,9 @@ html {
 }
 
 .footer {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
   background-color: #393f4d;
 }
 
