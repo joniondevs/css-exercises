@@ -4,6 +4,11 @@
 }
 
 .container {
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 4fr;
+  gap: 4px;
+  width: 100%;
+  height: 100vh;
   text-align: center;
 }
 
@@ -16,6 +21,9 @@
 }
 
 .header {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
   background-color: #393f4d;
 }
 
@@ -25,6 +33,8 @@
 }
 
 .sidebar {
+  display: grid;
+  grid-row: 2 / -2;
   background-color: #C50208;
 }
 
@@ -54,6 +64,8 @@
 }
 
 .article {
+  display: grid;
+  grid: 1fr 1fr 1fr / repeat(auto-fit, minmax(250px, 1fr));
   background-color: #bccbde;
 }
 
@@ -82,6 +94,10 @@
 }
 
 .footer {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
+
   background-color: #393f4d;
 }
 
