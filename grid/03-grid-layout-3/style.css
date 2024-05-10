@@ -22,14 +22,23 @@
 
 .header {
   display: grid;
+  grid: 1fr / 1fr 4fr;
   grid-column-start: 1;
   grid-column-end: -1;
   background-color: #393f4d;
 }
 
+.header ul{
+  display: grid;
+  grid: 1fr / repeat(4, 1fr);
+  justify-self: self-end;
+}
+
 .menu ul,
 .menu li {
+  display: grid;
   font-size: 16px;
+  align-self: center;
 }
 
 .sidebar {
